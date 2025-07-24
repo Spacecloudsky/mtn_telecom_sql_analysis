@@ -1,72 +1,94 @@
-# MTN Telecom Customer Analytics Dashboard
+MTN Telecom Customer Analysis with Power BI Visualizations
+This project is a telecom data analysis performed using Jupyter Notebook, Pandas, and Plotly, based on a simulated MTN Nigeria customer dataset. The analysis answers 10 core business questions on customer behavior, churn risk, network experience, and product performance. A Power BI dashboard is also included to enhance visual storytelling and allow for deeper stakeholder exploration.
 
-This project is an **interactive data dashboard** built with **Streamlit** and **Plotly**, showcasing key insights from a simulated MTN Nigeria telecom dataset. It answers 10 strategic business questions through SQL-driven analysis and intuitive visualizations.
+Project Objective
+To provide MTN Nigeria or similar telecom providers with data-driven insights by:
 
----
+Analyzing customer demographics and usage behavior
 
-## Project Objective
+Identifying patterns in churn, payment behavior, and loyalty
 
-To help telecom stakeholders (like MTN Nigeria) make data-driven decisions by:
-- Understanding customer behavior
-- Identifying risk and performance trends
-- Evaluating product impact
-- Highlighting areas for operational improvement
+Evaluating product and network performance
 
----
+Supporting strategic decisions with both code-based analysis and business-friendly visuals
 
-## Dataset
+Dataset Overview
+The dataset (telecom_customers.csv) contains 10,000 records with customer-level information including:
 
-The dataset (`telecom_customers.csv`) contains **10,000 rows** and includes customer-level data like:
-- Demographics (Age, Gender, State)
-- Subscription details (Plan type, Bill amount, Validity)
-- Usage metrics (Data, Voice, SMS)
-- Network experience (Call drop rate, Speed, Satisfaction)
-- Behavioral patterns (Payment history, KYC, Referrals)
+Demographics: Age, Gender, Location
 
----
+Subscription Details: Plan type, Validity, Monthly bill
 
-# Key Questions Answered
+Usage Metrics: Voice, Data, SMS
 
-1. **Customer Segmentation**  
-   Segmenting customers by age, gender, location, and plan type.
+Network Experience: Call drops, Internet speed, Satisfaction
 
-2. **Churn Risk Analysis**  
-   Identifying customers with unpaid/overdue bills and zero activity.
+Behavioral Indicators: KYC status, Payment history, Referrals
 
-3. **Top Users & Revenue Contributors**  
-   Finding the highest data users and top revenue-generating customers.
+Questions Addressed in the Analysis
+Customer Segmentation
+→ Grouping customers by demographics and subscription type.
 
-4. **KYC Compliance Check**  
-   Measuring KYC status against default rates.
+Churn Risk
+→ Highlighting customers with expired plans, missed payments, or zero usage.
 
-5. **Plan Performance**  
-   Comparing plan types and names based on user count and revenue.
+Top Users & High-Value Customers
+→ Identifying the most active and profitable users.
 
-6. **Network Quality Evaluation**  
-   Analyzing call drops and quality scores by state.
+KYC Compliance Impact
+→ Investigating how KYC status relates to defaults.
 
-7. **Payment Behavior Trends**  
-   Visualizing how customers pay: bank, card, USSD, etc.
+Plan Performance
+→ Comparing plans based on popularity and revenue generation.
 
-8. **Customer Support Demand**  
-   Exploring ticket counts and satisfaction to flag high-need customers.
+Network Performance by State
+→ Assessing call drop and speed satisfaction across regions.
 
-9. **Customer Loyalty and Referrals**  
-   Correlating loyalty tier with referral count.
+Payment Behavior Trends
+→ Evaluating modes of payment and payment success rates.
 
-10. **Device Usage Patterns**  
-   Understanding what types of devices and OS customers use.
+Customer Support Needs
+→ Flagging customers who frequently seek support.
 
----
+Loyalty & Referrals
+→ Understanding how loyalty tiers relate to referrals and retention.
 
-## Dashboard Features
+Device Usage Patterns
+→ Analyzing device type and OS among different customer segments.
 
-- **Interactive bar charts, pie charts, treemaps, sunbursts**
-- **Hover tooltips** for added context
-- **Filtering logic** built-in (e.g., only customers with ≥5 support tickets)
-- **Groupby summaries** and **percent breakdowns**
-- **Built with:**
-  - `Streamlit`
-  - `Pandas`
-  - `Plotly Express`
+Methodology
+Data Cleaning & Transformation in Jupyter using pandas
 
+Exploratory Data Analysis (EDA) using plotly.express
+
+Feature Engineering (e.g., churn flags, payment compliance ratios)
+
+Groupby and Aggregations to summarize patterns
+
+Visual Insights included within the notebook as interactive plots
+
+Additional Power BI Dashboard
+To make the findings more accessible to non-technical stakeholders, a Power BI dashboard was created. It visualizes key metrics and enables:
+
+Interactive filtering by region, plan type, and device
+
+Dynamic KPIs (Churn Rate, ARPU, Complaint Rate)
+
+Charts including bar plots, pie charts, treemaps, and heatmaps
+
+Drill-downs to explore user segments and complaint sources
+
+The Power BI file is included in the repository as MTN_Telecom_Insights.pbix.
+
+🛠 Tools & Technologies Used
+Tool/Library	Purpose
+Jupyter Notebook	Main environment for analysis
+Pandas	Data preprocessing and transformation
+Plotly Express	Visualizing results within notebook
+Power BI	Enhanced visualization and dashboarding
+CSV/Excel	Source data format
+
+Key Insights (Summary)
+Customers with expired plans and unpaid bills had the highest churn risk
+
+Android device users consumed more data and generated more support tickets
