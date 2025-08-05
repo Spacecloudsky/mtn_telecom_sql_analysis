@@ -15,15 +15,15 @@ To provide MTN Nigeria or similar telecom providers with data-driven insights by
 ## Dataset Overview
 The dataset (telecom_customers.csv) contains 10,000 records with customer-level information including:
 
-### Demographics: Age, Gender, Location
+1. Demographics: Age, Gender, Location
 
-### Subscription Details: Plan type, Validity, Monthly bill
+2. Subscription Details: Plan type, Validity, Monthly bill
 
-### Usage Metrics: Voice, Data, SMS
+3. Usage Metrics: Voice, Data, SMS
 
-### Network Experience: Call drops, Internet speed, Satisfaction
+4. Network Experience: Call drops, Internet speed, Satisfaction
 
-### Behavioral Indicators: KYC status, Payment history, Referrals
+5. Behavioral Indicators: KYC status, Payment history, Referrals
 
 ## Questions Addressed in the Analysis
 ### Customer Segmentation
@@ -57,27 +57,29 @@ The dataset (telecom_customers.csv) contains 10,000 records with customer-level 
 → Analyzing device type and OS among different customer segments.
 
 ## Methodology
-### Data Cleaning & Transformation in Jupyter using pandas
+1. Data Cleaning & Transformation in Jupyter using pandas
 
-### Exploratory Data Analysis (EDA) using plotly.express
+2. Exploratory Data Analysis (EDA) using plotly.express
 
-### Feature Engineering (e.g., churn flags, payment compliance ratios)
+3. Feature Engineering (e.g., churn flags, payment compliance ratios)
 
-### Groupby and Aggregations to summarize patterns
+4. Groupby and Aggregations to summarize patterns
 
-### Visual Insights included within the notebook as interactive plots
+5. Visual Insights included within the notebook as interactive plots
 
 ## Additional Power BI Dashboard
 To make the findings more accessible to non-technical stakeholders, a Power BI dashboard was created. It visualizes key metrics and enables:
 
-### Interactive filtering by region, plan type, and device
+1. Interactive filtering by region, plan type, and device
 
-### Dynamic KPIs (Total Billed Amount and Average Plan cost
+2. Dynamic KPIs (Total Billed Amount and Average Plan cost
 
-### Charts including bar plots and pie charts
+3. Charts including bar plots and pie charts
+
+However, note that there is a complete dashboard using Streamlit in the mtn_telecom_dashboard repository. The Power BI dashboard displays just some basic insights for this analysis. More detailed charts answering the questions are displayed on the mtn_telecom_dashboard repository in the form of a Streamlit app. This app can only be run on Streamlit.
 
 
-The Power BI file is included in the repository as MTN_Telecom_Insights.pbix.
+The Power BI file is included in the repository as Mtn_telecom_powerbi_report.pbix.
 
 🛠 Tools & Technologies Used
 Tool/Library	Purpose
@@ -88,6 +90,6 @@ Power BI	Enhanced visualization and dashboarding
 CSV/Excel	Source data format
 
 Key Insights (Summary)
-Customers above 50 consume more data and generated more income.
+Customers above 50 years of age consume more data and generated more income.
 
-Android device users consumed more data and generated more support tickets
+Android device users consumed more data and generated more support tickets(Chart displayed on Streamlit and plotly express)
