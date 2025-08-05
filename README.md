@@ -15,66 +15,66 @@ To provide MTN Nigeria or similar telecom providers with data-driven insights by
 ## Dataset Overview
 The dataset (telecom_customers.csv) contains 10,000 records with customer-level information including:
 
-# Demographics: Age, Gender, Location
+## Demographics: Age, Gender, Location
 
-# Subscription Details: Plan type, Validity, Monthly bill
+## Subscription Details: Plan type, Validity, Monthly bill
 
-# Usage Metrics: Voice, Data, SMS
+## Usage Metrics: Voice, Data, SMS
 
-# Network Experience: Call drops, Internet speed, Satisfaction
+## Network Experience: Call drops, Internet speed, Satisfaction
 
-# Behavioral Indicators: KYC status, Payment history, Referrals
+## Behavioral Indicators: KYC status, Payment history, Referrals
 
 ## Questions Addressed in the Analysis
-# Customer Segmentation
+## Customer Segmentation
 → Grouping customers by demographics and subscription type.
 
-# Churn Risk
+## Churn Risk
 → Highlighting customers with expired plans, missed payments, or zero usage.
 
-# Top Users & High-Value Customers
+## Top Users & High-Value Customers
 → Identifying the most active and profitable users.
 
-# KYC Compliance Impact
+## KYC Compliance Impact
 → Investigating how KYC status relates to defaults.
 
-# Plan Performance
+## Plan Performance
 → Comparing plans based on popularity and revenue generation.
 
-# Network Performance by State
+## Network Performance by State
 → Assessing call drop and speed satisfaction across regions.
 
-# Payment Behavior Trends
+## Payment Behavior Trends
 → Evaluating modes of payment and payment success rates.
 
-# Customer Support Needs
+## Customer Support Needs
 → Flagging customers who frequently seek support.
 
-# Loyalty & Referrals
+## Loyalty & Referrals
 → Understanding how loyalty tiers relate to referrals and retention.
 
-# Device Usage Patterns
+## Device Usage Patterns
 → Analyzing device type and OS among different customer segments.
 
 ## Methodology
-# Data Cleaning & Transformation in Jupyter using pandas
+## Data Cleaning & Transformation in Jupyter using pandas
 
-# Exploratory Data Analysis (EDA) using plotly.express
+## Exploratory Data Analysis (EDA) using plotly.express
 
-# Feature Engineering (e.g., churn flags, payment compliance ratios)
+## Feature Engineering (e.g., churn flags, payment compliance ratios)
 
-# Groupby and Aggregations to summarize patterns
+## Groupby and Aggregations to summarize patterns
 
-# Visual Insights included within the notebook as interactive plots
+## Visual Insights included within the notebook as interactive plots
 
 ## Additional Power BI Dashboard
 To make the findings more accessible to non-technical stakeholders, a Power BI dashboard was created. It visualizes key metrics and enables:
 
-# Interactive filtering by region, plan type, and device
+## Interactive filtering by region, plan type, and device
 
-# Dynamic KPIs (Total Billed Amount and Average Plan cost)
+## Dynamic KPIs (Total Billed Amount and Average Plan cost
 
-# Charts including bar plots and pie charts
+## Charts including bar plots and pie charts
 
 
 The Power BI file is included in the repository as MTN_Telecom_Insights.pbix.
